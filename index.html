@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+
+        <div class="calHead">
+            <input type="text" id="result" maxlength="12">
+        </div>
+
+        <div class="calBody">
+
+            <div>
+                <input type="button" class="btn btn-style" value="(" onclick="insertNum('(')">
+                <input type="button" class="btn btn-style" value=")" onclick="insertNum(')')">
+                <input type="button" class="btn btn-style" value="&Sqrt;" onclick="sqrt()">  
+                <input type="button" class="btn btn-style" value="x&sup2;" onclick="sqr()">    
+                <input type="button" class="btn btn-style " value="&pi;" onclick="insertNum(3.14159265359)"> 
+                <input type="button" class="btn btn-style" value="x!" onclick="seriesMult()">          
+            </div>
+
+            <div>
+                <input type="button" class="btn" value="7" onclick="insertNum(7)">
+                <input type="button" class="btn" value="8" onclick="insertNum(8)">
+                <input type="button" class="btn" value="9" onclick="insertNum(9)">
+                <input type="button" class="btn btn-operator" class="adBtn" value="/" onclick="insertNum('/')">
+                <input type="button" class="btn btn-operator" value="&times;" onclick="insertNum('*')" >
+                <input type="button" class="btn btn-clear" value="&DoubleLeftArrow;" onclick="del()">                
+            </div>
+
+            <div>
+                <input type="button" class="btn" value="4" onclick="insertNum(4)">
+                <input type="button" class="btn" value="5" onclick="insertNum(5)">
+                <input type="button" class="btn" value="6" onclick="insertNum(6)">
+                <input type="button" class="btn"value="0" onclick="insertNum(0)">                <input type="button" class="btn btn-operator" value="-" onclick="insertNum('-')">
+                <input type="button" class="btn btn-clear" value="C" onclick="clearResult()">
+            </div>
+
+            <div>
+                <input type="button" class="btn" value="1" onclick="insertNum(1)">
+                <input type="button" class="btn" value="2" onclick="insertNum(2)">
+                <input type="button" class="btn" value="3" onclick="insertNum(3)">   
+                <input type="button" class="btn"value="." onclick="insertNum('.')"> 
+                <input type="button" class="btn btn-operator" value="+" onclick="insertNum('+')"> 
+                <input type="button" class="btn btn-sum" value="=" onclick="sum()" >        
+            </div>
+            
+
+        </div>
+
+    </div>
+
+   <script src="app.js"></script> 
+</body>
+</html>
